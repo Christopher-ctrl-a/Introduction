@@ -1,0 +1,219 @@
+<!doctype html>
+<!-- Christopher Esguerra | Student#: 301483615-->
+<html lang="en">
+
+<head>
+    <style>
+        /*Reset margin and padding, Base font and overall Background*/
+        html,
+        body {
+
+            padding: 0;
+            margin: 0;
+            transform: translateY(-50px);
+            font-family: Verdana;
+            background-color: #d7ffd9;
+        }
+
+
+
+        /* For the header*/
+        header {
+            /*Adds the background image as a banner*/
+            min-height: 450px;
+            background-image: url('Landfill.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            position: relative;
+
+            /*Adds style to the font */
+            color: aliceblue;
+            text-shadow: 1px 1px 2px black;
+            font-size: 270%;
+        }
+
+        /*Move the header text towards the middle*/
+        .titleHeader {
+            text-align: center;
+            transform: translateY(250px);
+        }
+
+        /*Styling the section bar title*/
+        h4 {
+            text-align: center;
+            text-shadow: 1px 1px 2px black;
+            color: aliceblue;
+            font-size: 120%;
+
+            background-color: #093518be;
+
+            padding: 20px;
+            margin: 0;
+        }
+
+        /*Adjusting the text of each section*/
+        section {
+
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+
+        /*horizontal rule Color */
+        .hrColor {
+            border-color: rgba(0, 65, 16, 0.178);
+        }
+
+        /*Default Link color*/
+        a:link,
+        a:visited {
+            color: rgb(7, 64, 189);
+        }
+
+        /*If mouse hovers over link, change color*/
+        a:hover,
+        a:active {
+            color: blue;
+        }
+
+        /*Border and attribute for each gallery image*/
+        div.gallery {
+            margin: 5px;
+            float: left;
+            width: 30%;
+        }
+
+        /*Adjusting size for each image in container*/
+        div.gallery img {
+
+            width: 100%;
+            height: 300px;
+        }
+
+        /*When hovering over the image*/
+        div.gallery:hover {
+            background-color: #cccccc91;
+        }
+
+        div.desc{
+        text-align: center;
+        font-size: 110%;
+        color: black;
+        }
+
+        /*Styling paragraph*/
+        .p1 {
+            text-align: center;
+        }
+
+        /*Created to not overlap with gallery, also set as footer in the layout*/
+        footer{
+            padding-top: 40%;
+           
+        }
+    </style>
+
+</head>
+
+<!-- Christopher Esguerra | Student#: 301483615-->
+
+<!-- Main header -->
+<header>
+    <h3 class="titleHeader">Websites about Protected Areas Issues</h3>
+</header>
+
+<!-- Intro section -->
+
+    <h4><strong>Introduction</strong></h4>
+
+
+<section>
+    <p class="p1">
+        In recent times, the world is polluted with more waste created by humans. It is important that we maintain
+        protected
+        areas as they allow for the ecosystem to continue the cycle of nature. As we speak, some animals face
+        extinction, climate change becomes more apparent,
+        and the ocean is tainted with human waste. It is because of the issues created by humans arise, that we must
+        preserve them and do our part to keep our
+        planet sustainable. Below are some links that will inform you of goals, issues we face and how we can play our
+        part.
+    </p>
+
+    <!-- For related links -->
+    <ul>
+
+        <li><a href="https://iucn.org/">IUCN: International Union for Conservation of Nature</a></li>
+        <li><a href="https://www.protectedplanet.net/en">Protected Planet</a></li>
+        <li><a href="https://iucngreenlist.org/">IUCN Green List of Protected and Conserved Areas</a></li>
+        <li><a href="https://www.iucncontributionsfornature.org/">IUCN Contributions for Nature</a></li>
+        <li><a href="https://www.iucnredlist.org/">IUCN Red List of Threatened Species</a></li>
+        <li><a href="https://www.ecolex.org/">ECOLEX: The Gateway to Environmental Law</a></li>
+
+    </ul>
+</section>
+<h4><strong>Preview of Links</strong></h4>
+<section>
+
+
+    <div class="gallery">
+        <a target="_blank" href="https://iucn.org/">
+            <img src="Link 1 Screen Preview.png" alt="">
+        </a>
+        <div class="desc">IUCN: International Union for Conservation of Nature</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="https://www.protectedplanet.net/en">
+            <img src="Link 2 Screen Preview.png" alt="">
+        </a>
+        <div class="desc">Protected Planet</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="https://iucngreenlist.org/">
+            <img src="Link 3 Screen Preview.png" alt="">
+        </a>
+        <div class="desc">IUCN Green List of Protected and Conserved Areas</div>
+    </div>
+
+
+
+
+    <div class="gallery">
+        <a target="_blank" href="https://www.iucncontributionsfornature.org/">
+            <img src="Link 4 Screen Preview.png" alt="">
+        </a>
+        <div class="desc">IUCN Contributions for Nature</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="https://www.iucnredlist.org/">
+            <img src="Link 5 Screen Preview.png" alt="">
+        </a>
+        <div class="desc">IUCN Red List of Threatened Species</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="https://www.ecolex.org/">
+            <img src="Link 6 Screen Preview.png" alt="">
+        </a>
+        <div class="desc">ECOLEX: The Gateway to Environmental Law</div>
+    </div>
+
+
+</section>
+
+
+
+<footer class="p1">
+    <hr class="hrColor">
+    <small>&nbsp; &copy; Copyright Christopher Esguerra - COMP213 - Fall 2024 - 301483615 - Assignment 2</small>
+    <hr class="hrColor">
+
+    <small> Image and information credits: IUCN, Protected Planet, Canon, EXOLEX, EOS 5D Mark III on Unsplashed Free use License, </small>
+
+</footer>
+
+</html>
