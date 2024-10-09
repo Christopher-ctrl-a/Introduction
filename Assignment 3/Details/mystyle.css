@@ -1,0 +1,152 @@
+html,
+body {
+    /*Setting the font*/
+    transform: translateY(-30px);
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+}
+
+
+section {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*Styling the home navigation bar*/
+nav {
+    background-color: rgba(253, 104, 104, 0.267);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/*Styling for the banner on the header*/
+header {
+
+    /*Adds the background image as a banner*/
+    height: 250px;
+    width: auto;
+    background-image: url("https://cdn.pixabay.com/photo/2022/06/08/00/55/gaming-console-7249447_1280.jpg");
+    /* Free for use under the Pixabay Content License*/
+    background-color: #f64450;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    text-align: center;
+
+}
+
+
+/*Styling the title of the page*/
+h1 {
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 2rem;
+    color: rgba(221, 183, 183, 0.493);
+    transform: translate(0, 210px);
+}
+
+h3,h4 {
+    padding: 0%;
+    margin: 0%;
+}
+
+/*Adjusting Logo*/
+div.logo img {
+    height: 50px;
+    width: 50px;
+}
+
+.logo {
+    transform: translate(165px, 125px);
+}
+
+/*Styling for Table------------------------------------------------------------------------------*/
+table,
+th,
+td {
+
+    /*D*/
+    font-size: small;
+    margin: 0;
+    padding: 1px;
+    border-collapse: collapse;
+    border: 2px;
+
+    /*D*/
+    background: #d4e5f1;
+    border-style: solid;
+    border-color: rgb(77, 46, 9);
+
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    /* Check size visually */
+    /* background-color: DodgerBlue; */
+}
+
+td {
+    background: #fdfeff;
+}
+
+
+/*Whole Gallery section for different types of switches-------------------------------------------*/
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.gallery {
+    padding: 0 6px;
+    text-align: center;
+}
+
+.galleryLarge {
+    text-align: center;
+
+}
+
+div.galleryLarge img {
+    width: 800px;
+    height: auto;
+}
+
+
+
+
+div.desc {
+    padding: 14px;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/*Reset Float images*/
+.clearfix::after {
+
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.links {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+/*Links basic color*/
+a:active,
+a:link,
+a:visited {
+    color: black;
+}
+
+/*Hovering over link change color*/
+a:hover {
+    color: grey;
+}
