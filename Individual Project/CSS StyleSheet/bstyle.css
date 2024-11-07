@@ -1,0 +1,45 @@
+/* Christopher Esguerra | Student ID: 301483615 */
+html{
+    font-family: Verdana;
+}
+
+header {
+    color: #ffffff;
+    text-shadow: black;
+    margin: 0,0;
+    font-family: Tahoma;
+    text-align: center;
+    font-size: xx-large;
+    }
+
+.banner {
+    margin-left: 0;
+    margin-top: 0;
+    height: 200px;
+    width: 100vw;
+    background-image: url(https://imgs.search.brave.com/NsgBQCM3OjVXZrDJhWpWOWEuk21aC_S_yWtG3rmmPJk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cmQuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE3LzA2L2Jh/cmJlci1wb2xlLWZ0/LmpwZw);
+    background-position: center;  /* Centers the background image */
+    background-repeat: no-repeat;  /* Prevents image tiling */
+    background-size: cover;
+}
+
+a:link, a:any-link, a:visited{
+    color: black;
+}
+
+
+a:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+.navi{
+    height: 30px;
+    background-color: rgba(255, 202, 55, 0.705);
+}
+
+nav{
+    margin-top: auto;
+    height: 5px;
+    text-align: center;
+    font-size: 1.5em;
+}
