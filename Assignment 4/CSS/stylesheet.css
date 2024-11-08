@@ -7,9 +7,9 @@ html{
   
   }
 
-  p{
+  p, footer{
     text-align: center;
-    color: #d6c3f5  ;
+    color: #033d94  ;
 }
 
 
@@ -36,6 +36,7 @@ h5{
     margin: 10px;
     color: #3b509c;
 }
+
 strong{
     color: #0a1742
 }
@@ -50,9 +51,12 @@ hr{
 }
 
 form{
+    translate: 20vw;
+    width: 60vw;
     word-spacing: 2px;
     background-color: #d6c3f5;
     text-align: right;
+    margin: 0px;
 
 }
 
