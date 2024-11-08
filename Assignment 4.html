@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment4</title>
+    <link rel="stylesheet" href="./CSS/stylesheet.css">
+</head>
+
+
+<body>
+    <header>
+        <a href="https://www.centennialcollege.ca/"><img src="https://www.centennialcollege.ca/media/hg5nrxf4/centennialcollege_logo_horizontal_rgb.jpg" alt="Centennial College" height="50px" width="200"></a>
+        <h1> Centennial College - Registration form</h1>
+        <nav> <strong><a href="../index.html">Home</a> <a href="../Assignment 2/assignment2.html">Assignment 2</a> <a href="../Assignment 3/assignment3.html">Assignment 3</a> Assignment 4</strong> </nav>
+
+       
+        
+    </header>
+
+    
+    <form class="style1" action="./Feedback/Feedback.html">
+
+            <div class="basicinfo">
+                <h5> Please read each statement carefully and consider each one individually.</h5>
+            <label for="CourseName">Course Name/Code: </label><input type="text" id="CourseName" placeholder="Please Enter Course Name/Code" size="30"><br>
+            <label for="semester">Semester:</label> <br>
+<!-- Fix this ^^^ -->
+            <label for="Fall">Fall</label>
+                <input type="radio" id="Fall" name="Semester" required >
+            <label for="Winter">Winter</label>
+                <input type="radio" id="Winter" name="Semester" required>
+            <label for="Spring/Summer">Spring/Summer</label>
+                <input type="radio" id="Spring/Summer" name="Semester" required>
+            <br>
+
+            <label for="Year">Year:</label>
+                <input type="number" name="Year" id="Year" min="1990" max="2450" placeholder="'2024'" required minlength = "4" maxlength="4">
+            <br>
+
+            <label for="Instructor">Instructor:</label>
+                <input type="text" id="Instructor" name ="Instructor" placeholder="Enter Instructor's Name" required>
+            </div>
+        <hr>
+        
+        <div class="headerblock">
+            <h3>Instructor</h3>
+           
+            
+            <h4>How would you rate the instructor's</h4>
+        </div>
+
+        
+
+        <h5>1. <strong>Knowledge</strong>  of subject?</h5> 
+            
+            <label for="aknowledge">Excellent</label><input type="radio" name="knowledge" id="aknowledge" required>
+            <label for="bknowledge">&nbsp; Good</label><input type="radio" name="knowledge" id="bknowledge" required>
+            <label for="cknowledge">&nbsp; Fair</label><input type="radio" name="knowledge" id="cknowledge" required>
+            <label for="dknowledge">&nbsp; Not Satisfactory</label><input type="radio" name="knowledge" id="dknowledge" required>
+            
+        <br>
+
+        <h5>2. <strong>Helpfulness</strong>?</h5> 
+            <label for="ahelpfulness">Excellent</label><input type="radio" name="helpfulness" id="ahelpfulness" required>
+            <label for="bhelpfulness">&nbsp; Good</label><input type="radio" name="helpfulness" id="bhelpfulness" required>
+            <label for="chelpfulness">&nbsp; Fair</label><input type="radio" name="helpfulness" id="chelpfulness" required>
+            <label for="dhelpfulness">&nbsp; Not Satisfactory</label><input type="radio" name="helpfulness" id="dhelpfulness" required>
+        <br>
+
+        <h5>3. <strong>Courtesy and respect</strong> for all students?</h5>  
+            <label for="arespect">Excellent</label><input type="radio" name="respect" id="arespect" required>
+            <label for="brespect">&nbsp; Good</label><input type="radio" name="respect" id="brespect" required>
+            <label for="crespect">&nbsp; Fair</label><input type="radio" name="respect" id="crespect" required>
+            <label for="drespect">&nbsp; Not Satisfactory</label><input type="radio" name="respect" id="drespect" required>
+        <br>
+
+        <h5>4. <strong>Communication</strong> skills?</h5> 
+            <label for="acommunication">Excellent</label><input type="radio" name="communication" id="acommunication" required>
+            <label for="bcommunication">&nbsp; Good</label><input type="radio" name="communication" id="bcommunication" required>
+            <label for="ccommunication">&nbsp; Fair</label><input type="radio" name="communication" id="ccommunication" required>
+            <label for="dcommunication">&nbsp; Not Satisfactory</label><input type="radio" name="communication" id="dcommunication" required>
+        <br>
+        
+        <h5>5. Overall <strong>performance</strong>?</h5> 
+            <label for="aperformance">Excellent</label><input type="radio" name="performance" id="aperformance" required>
+            <label for="bperformance">&nbsp; Good</label><input type="radio" name="performance" id="bperformance" required>
+            <label for="cperformance">&nbsp; Fair</label><input type="radio" name="performance" id="cperformance" required>
+            <label for="dperformance">&nbsp; Not Satisfactory</label><input type="radio" name="performance" id="dperformance" required>
+
+
+
+        <h3 class="headerblock">Course</h3>
+        
+
+        <h5>6. How would you rate the <strong>course materials</strong>?</h5>
+            <label for="amaterial">Excellent</label><input type="radio" name="material" id="amaterial" required>
+            <label for="bmaterial">&nbsp; Good</label><input type="radio" name="material" id="bmaterial" required>
+            <label for="cmaterial">&nbsp; Fair</label><input type="radio" name="material" id="cmaterial" required>
+            <label for="dmaterial">&nbsp; Not Satisfactory</label><input type="radio" name="material" id="dmaterial" required>
+        <br>
+        <h5>7. How much did this course meet your <strong>expectations</strong>?</h5>
+            <label for="aexpectations">Excellent</label><input type="radio" name="expectations" id="aexpectations" required>
+            <label for="bexpectations">&nbsp; Good</label><input type="radio" name="expectations" id="bexpectations" required>
+            <label for="cexpectations">&nbsp; Fair</label><input type="radio" name="expectations" id="cexpectations" required>
+            <label for="dexpectations">&nbsp; Not Satisfactory</label><input type="radio" name="expectations" id="dexpectations" required>
+        <br>
+        <h5>8. How would you rate this course <strong>overall</strong>?</h5>
+            <label for="aoverall">Excellent</label><input type="radio" name="overall" id="aoverall" required>
+            <label for="boverall">&nbsp; Good</label><input type="radio" name="overall" id="boverall" required>
+            <label for="coverall">&nbsp; Fair</label><input type="radio" name="overall" id="coverall" required>
+            <label for="doverall">&nbsp; Not Satisfactory</label><input type="radio" name="overall" id="doverall" required>
+        <br>
+
+
+
+            <h3 class="headerblock">General Information</h3>
+            
+            
+        <h5>9. Was the <strong>course outline</strong> reviewed/explained at the beginning of your course?</h5>
+            <label for="ycheck">Yes</label><input type="radio" name="check" id="ycheck" required>
+            <label for="ncheck">&nbsp; No</label><input type="radio" name="check" id="ncheck" required>
+            <label for="nscheck">&nbsp; Not Sure</label><input type="radio" name="check" id="nscheck" required>
+            <br>
+
+
+        <h5>10. Would you <strong>recommend</strong> this course to a friend with the same interest?</h5>
+            <label for="arecommend">Yes</label><input type="radio" name="recommend" id="arecommend" required>
+            <label for="brecommend">&nbsp; No</label><input type="radio" name="recommend" id="brecommend" required>
+            <label for="crecommend">&nbsp; Not Sure</label><input type="radio" name="recommend" id="crecommend" required>
+            <br>
+
+        
+        <br>
+        <h3 class="headerblock">Additional Information</h3>
+
+        <div class="basicinfo">
+        <h5>11. Any other comments?</h5>
+        <textarea name="comments" id="comments" rows="10" cols="90" placeholder="Write your comment here" ></textarea>
+        <br>
+        
+        <h5>12. How could we improve this course?</h5>
+        <textarea name="improve" id="improve" rows="10" cols="90" placeholder="Write your comment here"></textarea><br>
+
+        <h5>16. Other...</h5>
+        <textarea name="other" id="other" rows="10" cols="90" placeholder="Write your comment here"></textarea><br>
+
+    </div>
+
+        <div class="basicinfo">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        </div>
+    </form>
+
+
+
+    <!-- Add instructor Forum page -->
+    
+<!-- I couldn't see the image on the assignment page so I rewrote what I saw on the zoom meeting recording -->
+<!-- Please read each statement carefully and consider each one individually. Use the computer card to make your choice (use a pencil to fill in the space. Give only one answer fo each question)
+
+    Course Name/Code: (text)
+    Semester Fall Winter Spring/Summer
+    Year: (Date)
+    Instructor
+    -----------
+    How would you rate the instructor's
+    1. (Knowledge) of the subject?
+    2. (helpfulness)
+    3. (courtesy and respect) for all students
+    4. (communication) skills
+    5. overall (performance)
+
+    a b c d (Excellent, Good, Fair, Not Satisfactory)
+
+    Course
+    --------
+    6. How would you rate the (course materials)?
+    7. How much did this course meet your (expectations)?
+    8. How would you rate this course (overall)
+        
+    a b c d (Excellent, Good, Fair, Not Satisfactory) 
+    
+    
+    General Information
+    ---------------------
+    9. Was the course outline reviewed/explaied at the beginning of your course?
+    10. Would you recommend this course to a friend with the same interest?
+    abc yes /no /not sure
+
+    Any other comments? (Please use the back of the computer card or this paper if necessary)
+    (What is the best thing about this course?)
+    (How could we improve this course?)
+
+    Thank you! We pay attention to your feedback!
+    HYPERLINK
+    Web: wwww.centennialcollege.ca/continuing_education
+    Email: continuingeducation@cennialcollege.ca
+    -->
+
+<footer>
+    
+    <small>
+        
+    <!-- The email and website given doesn't work -->
+    <p>
+        
+    Web:<a href="wwww.centennialcollege.ca/continuing_education" target="_blank">wwww.centennialcollege.ca/continuing_education</a> &nbsp;
+    Email:<a href="continuingeducation@cennialcollege.ca" target="_blank">continuingeducation@cennialcollege.ca</a> <br>
+    <hr>
+    &copy;&nbsp;Copyright Christopher Esguerra - COMP213 - <span lang="en-ca">Fall</span> 20<span lang="en-ca">24</span>
+    </p>    
+    </small>
+</footer>
+    
+</body>
+</html>
