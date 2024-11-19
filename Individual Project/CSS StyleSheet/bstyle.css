@@ -1,45 +1,307 @@
 /* Christopher Esguerra | Student ID: 301483615 */
-html{
-    font-family: Verdana;
+
+/* General Styling */
+html {
+    /* Page Default Font */
+    font-family: Verdana, Tahoma, Helvetica, sans-serif;
+    /* Gradient background */
+    background-color: #000000;
+    color: #fffcf8;
 }
 
-header {
-    color: #ffffff;
-    text-shadow: black;
-    margin: 0,0;
-    font-family: Tahoma;
-    text-align: center;
-    font-size: xx-large;
-    }
+body {
 
-.banner {
-    margin-left: 0;
-    margin-top: 0;
-    height: 200px;
-    width: 100vw;
-    background-image: url(https://imgs.search.brave.com/NsgBQCM3OjVXZrDJhWpWOWEuk21aC_S_yWtG3rmmPJk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cmQuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE3LzA2L2Jh/cmJlci1wb2xlLWZ0/LmpwZw);
-    background-position: center;  /* Centers the background image */
-    background-repeat: no-repeat;  /* Prevents image tiling */
-    background-size: cover;
-}
+    min-height: 100vh;
+    margin: 0px;
 
-a:link, a:any-link, a:visited{
-    color: black;
 }
 
 
-a:hover {
+/* Hyperlinks adjustments */
+a:link,
+a:visited {
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+
+}
+
+a:hover,
+a:active {
+    color: rgb(97, 97, 97);
     background-color: rgb(221, 221, 221);
 }
 
-.navi{
-    height: 30px;
-    background-color: rgba(255, 202, 55, 0.705);
-}
 
-nav{
-    margin-top: auto;
-    height: 5px;
+/* Navigation bar */
+.navi {
+
+    position: sticky;
+    padding: 10px;
+    top: 0px;
+    word-spacing: 30px;
+
+    color: #fffcf8;
+    border: solid 1px #000000;
+    background-color: rgb(46, 46, 46);
+
     text-align: center;
     font-size: 1.5em;
+    
 }
+
+/* Dropdown Menu */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    border: none;
+
+    padding: 0px;
+    margin: 1px;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+
+    background-color: rgb(46, 46, 46);
+    min-width: 100px;
+    
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    text-align: left;
+    color:#fffcf8;
+
+    margin-top: 10px;
+    padding: 10px;
+    
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown-content a:hover {background-color: #929292;}
+
+
+
+h4 {
+    text-align: justify;
+}
+
+footer,
+h5{
+
+    font-size: large;
+    text-align: center;
+}
+
+footer {
+
+    background-color: rgb(20, 20, 20);
+    color: aliceblue;
+    padding: 25px;
+    margin: 0px;
+
+}
+.logo{
+    
+        width: 75px;
+        height: auto;
+        margin: 0 auto;
+       
+}
+
+.headerTxt{
+
+        /* Fonts Settings */
+        color: #fffcf8;
+        text-shadow: 3px 3px black;
+        font-family: Tahoma;
+        font-size: 3rem;
+        text-align: center;
+        letter-spacing:  3px;
+        margin: 0;
+        padding-top: 30px;
+
+}
+
+.indexblock{
+    
+    background-color: #2c2c2c;
+    margin: 60px 2vw 60px 2vw;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+
+    text-align: justify;
+    contain: content;
+
+    width: 40vw;
+    min-width: 400px;
+    max-width: 600px;
+}
+
+.locationblock{
+
+    background-color: #2c2c2c;
+    color: rgb(255, 255, 255);
+
+    text-align: center;
+    contain: content;
+
+    margin: 60px auto;
+    margin-top: 70px;
+    padding: 20px;
+
+    min-width: 700px;
+    max-width: 800px;
+    
+}
+
+
+/* Home Page */
+.indexheader {
+
+
+    /* Sizing */
+    margin: 0;
+    min-height: 93vh;
+    min-width: 100vw;
+    position: relative;
+    
+    /*Background Settings  */
+    background-image: url(https://img.freepik.com/free-photo/front-view-maki-sushi-nigiri-with-copy-space_23-2148348206.jpg?semt=ais_hybrid);
+    background-position: right;
+    /* Centers the background image */
+    background-repeat: no-repeat;
+    /* Prevents image tiling */
+    background-size: contain;
+
+}
+
+
+/* Contact Us Page */
+
+.headercontact{
+    color: #fffcf8;
+    text-shadow: 3px 3px black;
+    letter-spacing:  3px;
+
+    font-family: Tahoma;
+    font-size: 3rem;
+    text-align: center;
+
+    background-color: #000000;
+    background-image: url(https://imgs.search.brave.com/XKDBDhGLZowEKT3Elc5L2BGgrAyfiIoSl1pYHbnCh64/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQx/NDg4ODkzNy9waG90/by9zYWxtb24tc3Vz/aGktYnktd29vZGVu/LWNob3BzdGlja3Mu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PU1rTHExQ1phd3By/M1pyLUlGUDNLZUNG/UG5mdUF1cm1KV2Ux/dHl3TEhnQW89);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size:contain;
+
+    margin: 0;
+    height: 20vh;
+    max-height: 100px;
+    padding-top: 50px;
+    width: 100vw;
+
+}
+
+.about {
+
+    padding: 40px 20vw 40px 20vw;
+    text-align: center;
+    color: rgb(180, 180, 180);
+    background-color: rgba(26, 26, 26, 0.493);
+}
+
+.bodyblock{
+    background-color: rgba(49, 49, 49, 0.493);
+}
+
+textarea {
+    font-size: x-large;
+    width: 59vw;
+    height: 200px;
+    resize: none;
+}
+
+input {
+
+    font-size: large;
+    width: 20vw;
+    max-width: 200px;
+
+}
+
+form {
+
+    
+    padding: 20px;
+    margin: 60px 20vw 60px 20vw;
+
+    text-align: left;
+    width: 60vw;
+
+    border: #2c2c2c solid 4px;
+    background-color: rgba(82, 82, 82, 0.212);
+
+}
+
+.contactBg {
+
+    text-align: center;
+    width: 100vw;
+    height: 64vh;
+
+}
+
+.mapimg {
+
+    width: 750px;
+    height: 150px;
+    margin: 0, 20vh, 0, 20vh;
+
+}
+
+/* Menu Page Styling */
+
+.tableimg{
+
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+}
+
+table{
+
+    align-items: center;
+    margin: 0 auto;
+    width: 60vw;
+    max-width: 600px;
+
+}
+
+caption{
+    text-align: left;
+    font-size: 3em;
+    text-shadow: #2c2c2c 4px 4px;
+}
+
+table, th, td {
+
+    border: 1px solid black;
+    text-align: left;
+    margin: 1 auto;
+    background-color: rgba(82, 82, 82, 0.212);
+    padding: 10px;
+
+}
+
+
+.tableimgcontainer{
+
+    background-color: rgb(255, 255, 255);
+    color: #fffcf8;
+    border: solid 5px #2c2c2c;
+
+}
+
